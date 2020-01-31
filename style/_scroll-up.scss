@@ -1,0 +1,66 @@
+.scroll-up{
+  position: fixed;
+  display: flex;
+  right: 2%;
+  bottom: 10%;
+  &.active{
+    .arrow{
+      transform: rotate(0deg);
+      cursor: pointer;
+    }
+  }
+  @include responsive(phone){
+    right: 0%;
+  }
+  .arrow{
+    width: 40px;
+    height: 40px;
+    transform-origin: 25% 25%;
+    transform: rotate(0deg);
+    transition: .5s ease;
+    transform: rotate(180deg);
+    @include responsive(phone){
+      width: 30px;
+      height: 30px;
+    }
+    span{
+        position: absolute;
+        left: 0;
+        display: block;
+        opacity: 1;
+        height: 2px;
+        border-radius: calc( 2px / 2);
+        background: black;
+        transition: 1s ease;
+        transform: rotate(0deg);
+        &:nth-child(1) {
+          width: 50%;
+            top: 0;
+            transform-origin: left center;
+            transform: rotate(-45deg);
+          }
+      
+          &:nth-child(2) {
+            width: 50%;
+            top: 0;
+            left: 7px;
+            transform-origin: right center;
+            transform: rotate(45deg);
+            @include responsive(phone){
+              left: 6px;
+            }
+          }
+          &:nth-child(3) {
+            width: 80%;
+            top: 4px;
+            left: -2.5px;
+            transform-origin: center;
+            transform: rotate(90deg);
+            @include responsive(phone){
+              top: 2px;
+              left: -1px;
+            }
+          }
+    }
+}
+}

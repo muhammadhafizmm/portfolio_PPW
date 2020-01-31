@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/logo.png">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar section -->
+    <div class="navbar" id="navbar">
+        <div class="logo"><a href="">Hello.</a></div>
+        <div class="mobile-menu-button" id="mobile-menu-button" onclick="tooglebtn1()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="selection">
+            <ul>
+                <li onmouseover="lineover(0)" onmouseout="lineout(0)"><a href="index.html" class="nav-select">Home</a><span class="nav-line"></span></li>
+                <li onmouseover="lineover(1)" onmouseout="lineout(1)"><a href="#portfolio" class="nav-select">Portfolio</a><span class="nav-line"></span></li>
+                <li onmouseover="lineover(2)" onmouseout="lineout(2)"><a href="#contact" class="nav-select">Contact</a><span class="nav-line"></span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="big-nav" id="select">
+        <div class="selection" onclick="tooglebtn1()" >
+            <a href="index.html">Home</a>
+            <a href="#portfolio">Portfolio</a> 
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <!-- end of navbar section -->
+    <section class="home-greeting">
+        <div class="background1">
+            <span>Portfolio</span>
+        </div>
+        <h1>MUHAMMAD HAFIZ MAULANA.</h1>
+        <div class="background2">
+            <span>Portfolio</span>
+        </div>    
+    </section>
+    <section class="content-bio" id="portfolio">
+        <div class="photo1"><span>My Profile</span></div>
+        <div class="biodata1">
+            <div class="content">
+                <div class="tentangsaya">
+                    <span class="tittle1">tentangsaya.</span>
+                    <div class="table1">
+                    <table>
+                        <tr>
+                            <td>Nama</td>
+                            <td>: Muhammad Hafiz Maulana</td>
+                        </tr>
+                        <tr>
+                            <td>NPM</td>
+                            <td>: 1906350742</td>
+                        </tr>
+                        <tr>
+                            <td>Angkatan</td>
+                            <td>: 2019</td>
+                        </tr>
+                        <tr>
+                            <td>Jurusan</td>
+                            <td>: Ilmu Komputer</td>
+                        </tr>
+                        <tr>
+                            <td>Universitas &nbsp;</td>
+                            <td>: Universitas Indonesia</td>
+                        </tr>
+                        <tr>
+                            <td>Hobi</td>
+                            <td>: Berhitung, Visual Desain, Game</td>
+                        </tr>
+                    </table>
+                    </div>
+                </div>
+                <div class="pendidikan">
+                    <span class="tittle2">pendidikanformal.</span>
+                    <div class="table2">
+                        <table>
+                            <tr>
+                                <td>Universitas Indonesia</td>
+                                <td>2019 - Sekarang</td>
+                            </tr>
+                            <tr>
+                                <td>SMAN Modal Bangsa Aceh Besar</td>
+                                <td>2016 - 2019</td>
+                            </tr>
+                            <tr>
+                                <td>SMPN 19 Percontohan Banda Aceh &nbsp;</td>
+                                <td>2013 - 2016</td>
+                            </tr>
+                            <tr>
+                                <td>MIN 1 Banda Aceh</td>
+                                <td>2007 - 2013</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="tentang-ku">
+                <div class="photo2"><span>deskripsisingkat.</span></div>
+                <p class="deskrip">Muhammad Hafiz Maulana, Seorang mahasiswa. Berkuliah di Universitas Indonesia jurusan Ilmu Komputer angkatan 2019. Senang berhitung menjadi alasan masuk Ilmu Komputer. Di tahun 2020 ini ia ingin mencoba banyak hal baru lagi, ingin berteman dan bertemu dengan banyak orang, dan ingin mencari pengalaman yang baru. Cita-citanya lulus pada waktunya. Moto hidupnya adalah menjadi bermanfaat.</p>
+            </div>
+        </div>
+        
+    </section>
+    <section class="thank-you">
+        <h1>TerimaKasih.</h1>
+        <span>sudah mampir...</span>
+    </section>
+    <div class="footer" id="contact">
+        <div class="email"><span>Email -- <a href="https://mail.google.com/mail/?to=inbox@example.com&bcc=admin@example.com&subject=Hey#compose">m.hafizmaulana777@gmail.com</a></span></div>
+        <div class="socmed">
+            <a href="https://www.linkedin.com/in/muhammad-hafiz-maulana-990980157/"><img src="img/linkedin.png" alt=""></a>
+            <a href="https://twitter.com/mhdhafizmm"><img src="img/twitter.png" alt=""></a>
+            <a href="http://line.me/ti/p/muhammadhafizm"><img src="img/line.png" alt=""></a>
+            <a href="https://api.whatsapp.com/send?phone=6282247558182"><img src="img/whatsap.png" alt=""></a>
+            <a href="https://www.instagram.com/muhammadhafizm/"><img src="img/instagram.png" alt=""></a>
+        </div>
+    </div>
+    <div class="scroll-up" onclick="location.href='#navbar'">
+        <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+</body>
+<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+<script>
+    ScrollOut();
+</script>
+<script src="style/scroll-up.js"></script>
+<script src="style/navbar.js"></script>
+</html>

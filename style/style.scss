@@ -1,0 +1,224 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+// import templates
+@import "./footer";
+@import "./navbar";
+@import "./responsive";
+@import "./scroll-up";
+@import "./background";
+
+.home-greeting{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    h1{
+        font-weight: 900;
+        font-size: 5em;
+        @include responsive(tabPort){
+            font-size: 4.3em;
+        }
+        @include responsive(phone){
+            font-size: 3em;
+        }
+    }
+}
+.content-bio{
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .photo1{
+        width: 80vw;
+        height: 40vh;
+        background: linear-gradient(0deg, rgba(72, 104, 96, 0.3), rgba(42, 77, 69, 0.3)),url(../img/photo2.jpg);
+        background-position: 50% 45%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        @include responsive(tabPort){
+            justify-content: center;
+        }
+        span{
+            position: absolute;
+            font-size: 7em;
+            right: 1%;
+            font-weight: 900;
+            color: rgb(0, 0, 0);
+            @include responsive(tabPort){
+                position: relative;
+                color: white;
+                font-size: 4em;
+            }
+        }
+
+        @include responsive(tabPort){
+            width: 100vw;
+        }
+    }
+    .biodata1{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100vw;
+        @include responsive(tabPort){
+            flex-direction: column;
+            align-items: center;
+        }
+        .tentang-ku{
+            margin-top: 1rem;
+            width: 41%;
+            @include responsive(tabPort){
+                width: 80%;
+            }
+            .photo2{
+                width: 100%;
+                height: 34vh;
+                background: linear-gradient(0deg,  rgba(72, 104, 96, 0.3), rgba(42, 77, 69, 0.3)),url(../img/photo1.jpg);
+                background-position: 50% 65%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                align-items: flex-end;
+                span{
+                    position: relative;
+                    bottom: -25px;
+                    left: -30px;
+                    font-size: 4em;
+                    font-weight: 700;
+                    color: rgb(0, 0, 0);
+                    display: flex;
+                    flex-direction: column;
+                    @include responsive(tabLan){
+                        font-size: 3em;
+                    }
+                    @include responsive(phone){
+                        font-size: 2.5em;
+                    }
+
+                }
+                @include responsive(tabPort){
+                    height: 25vh;
+                }
+
+            }
+            .deskrip{
+                margin-top: 2rem;
+                font-size: 1.3em;
+                text-align: justify;
+                @include responsive(tabLan){
+                    font-size: 1.1em;
+                }
+                @include responsive(tabPort){
+                    font-size: 1.1em;
+                }
+            }
+
+        }
+        .content{
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-left: 1.5rem;
+            @include responsive(tabPort){
+                margin: 0 2rem 0 2rem;
+                width: calc(100vw - 4rem);
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            @include responsive(phone){
+                flex-direction: column;
+                justify-content: center;
+            }
+            .tittle1{
+                margin: 0 0 1rem 0;
+                font-size: 4em;
+                font-weight: 700;
+                color: rgba(160, 128, 128, 0.445);
+                display: flex;
+                flex-direction: column;
+                @include responsive(tabLan){
+                    font-size: 3em;
+                }
+                @include responsive(tabPort){
+                    font-size: 2em;
+                }
+                
+            }
+            .tittle2{
+                @extend .tittle1;
+                @include responsive(tabPort){
+                    text-align: right;
+                }
+            }
+            .table1{
+                margin: 0 0 1rem 0;
+                display: block;
+                font-size: 1.5em;
+                @include responsive(tabLan){
+                    font-size: 1.3em;
+                }
+                @include responsive(tabPort){
+                    font-size: 1em;
+                }
+                @include responsive(phone){
+                    font-size: .8em;
+                }
+            }
+            .table2{
+                @extend .table1;
+                @include responsive(tabPort){
+                    float: right;
+                }
+            }
+        }
+    }
+}
+.thank-you{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    @include responsive(phone){
+        margin-top: 2rem;
+    }
+    h1{
+        font-size: 5em;
+        margin-bottom: 0;
+        @include responsive(phone){
+            font-size: 3em;
+        }
+    }
+
+}
+
+[data-scroll] {
+    transition: all 1s;
+}
+[data-scroll="in"]{
+    opacity: 1;
+    transform: translateY(0);
+}
+[data-scroll="out"]{
+    opacity: 0;
+    transform: translateY(-20px);
+}

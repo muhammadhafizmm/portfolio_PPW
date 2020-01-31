@@ -1,0 +1,67 @@
+.home-greeting{
+    .background1{
+        position: relative;
+        top: 25%;
+        right: -125px;
+        @include responsive(phone){
+            top: 21%;
+            right: -150px;
+        }
+        animation: background1 5s ease infinite;
+        span{
+            font-size: 9em;
+            font-weight: 900;
+            color: rgba(77, 74, 74, 0.445);
+            @include responsive(tabPort){
+                font-size: 7em;
+            }
+            @include responsive(phone){
+                font-size: 5em;
+            }
+        }
+        @keyframes background1 {
+            0%{
+                transform: translateX(0);
+            }
+            50%{
+                transform: translateX(-10%);
+            }
+            100%{
+                transform: translateX(0);
+            }
+        }
+    }
+    .background2{
+        position: relative;
+        bottom: 25%;
+        left: -125px;
+        animation: background2 5s ease infinite;
+        @include responsive(phone){
+            bottom: 21%;
+            left: -150px;
+        }
+        
+        span{
+            font-size: 9em;
+            font-weight: 900;
+            color: rgba(77, 74, 74, 0.445);
+            @include responsive(tabPort){
+                font-size: 7em;
+            }
+            @include responsive(phone){
+                font-size: 5em;
+            }
+        }
+        @keyframes background2 {
+            0%{
+                transform: translateX(0);
+            }
+            50%{
+                transform: translateX(10%);
+            }
+            100%{
+                transform: translateX(0);
+            }
+        }
+    }
+}
