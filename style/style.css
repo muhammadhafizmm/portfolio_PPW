@@ -359,7 +359,7 @@ body {
 
 @media only screen and (max-width: 750px) {
   .scroll-up .arrow span:nth-child(2) {
-    left: 6px;
+    left: 5.5px;
   }
 }
 
@@ -376,7 +376,7 @@ body {
 @media only screen and (max-width: 750px) {
   .scroll-up .arrow span:nth-child(3) {
     top: 2px;
-    left: -1px;
+    left: -1.5px;
   }
 }
 

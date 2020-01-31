@@ -47,7 +47,7 @@
             transform-origin: right center;
             transform: rotate(45deg);
             @include responsive(phone){
-              left: 6px;
+              left: 5.5px;
             }
           }
           &:nth-child(3) {
@@ -58,7 +58,7 @@
             transform: rotate(90deg);
             @include responsive(phone){
               top: 2px;
-              left: -1px;
+              left: -1.5px;
             }
           }
     }
