@@ -538,6 +538,135 @@ body {
   }
 }
 
+.project-section {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.project-section .header-project {
+  width: 100%;
+  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project-section .header-project span {
+  font-size: 5em;
+  font-weight: 900;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+@media only screen and (max-width: 750px) {
+  .project-section .header-project span {
+    font-size: 2.8em;
+  }
+}
+
+.project-section .gallery-project {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.project-section .gallery-project .proj {
+  width: 80%;
+  height: 35vh;
+  margin: 1rem 0 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1100px) {
+  .project-section .gallery-project .proj {
+    width: 100%;
+  }
+}
+
+.project-section .gallery-project .proj span {
+  position: relative;
+  padding: 0 1rem 0 1rem;
+  color: black;
+  font-size: 6em;
+  font-weight: 800;
+  -webkit-transform: translateX(45%);
+          transform: translateX(45%);
+}
+
+@media only screen and (max-width: 1100px) {
+  .project-section .gallery-project .proj span {
+    color: white;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .project-section .gallery-project .proj span {
+    font-size: 2.5em;
+  }
+}
+
+.project-section .gallery-project .proj:nth-child(even) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.project-section .gallery-project .proj:nth-child(even) span {
+  -webkit-transform: translateX(-45%);
+          transform: translateX(-45%);
+}
+
+@media only screen and (max-width: 1100px) {
+  .project-section .gallery-project .proj:nth-child(even) span {
+    color: white;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.project-section .gallery-project .proj:nth-child(1) {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(72, 79, 90, 0.555)), to(rgba(132, 147, 175, 0.555))), url(../img/Bismit1.png);
+  background: linear-gradient(0deg, rgba(72, 79, 90, 0.555), rgba(132, 147, 175, 0.555)), url(../img/Bismit1.png);
+  background-position: 50% 45%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-section .gallery-project .proj:nth-child(2) {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(72, 79, 90, 0.555)), to(rgba(132, 147, 175, 0.555))), url(../img/StudioDesktop1.png);
+  background: linear-gradient(0deg, rgba(72, 79, 90, 0.555), rgba(132, 147, 175, 0.555)), url(../img/StudioDesktop1.png);
+  background-position: 50% 45%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .content-bio {
   margin-top: 4rem;
   width: 100%;

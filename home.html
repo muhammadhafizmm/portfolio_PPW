@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <!-- navbar section -->
     <div class="navbar" id="navbar">
         <div class="logo"><a href="">Hello.</a></div>
@@ -21,15 +22,17 @@
         <div class="selection">
             <ul>
                 <li onmouseover="lineover(0)" onmouseout="lineout(0)"><a href="home.html" class="nav-select">Home</a><span class="nav-line"></span></li>
-                <li onmouseover="lineover(1)" onmouseout="lineout(1)"><a href="#portfolio" class="nav-select">Portfolio</a><span class="nav-line"></span></li>
-                <li onmouseover="lineover(2)" onmouseout="lineout(2)"><a href="#contact" class="nav-select">Contact</a><span class="nav-line"></span></li>
+                <li onmouseover="lineover(1)" onmouseout="lineout(1)"><a href="#project" class="nav-select">Project</a><span class="nav-line"></span></li>
+                <li onmouseover="lineover(2)" onmouseout="lineout(2)"><a href="#About" class="nav-select">About</a><span class="nav-line"></span></li>
+                <li onmouseover="lineover(3)" onmouseout="lineout(3)"><a href="#contact" class="nav-select">Contact</a><span class="nav-line"></span></li>
             </ul>
         </div>
     </div>
     <div class="big-nav" id="select">
         <div class="selection" onclick="tooglebtn1()" >
             <a href="home.html">Home</a>
-            <a href="#portfolio">Portfolio</a> 
+            <a href="#project">Project</a>
+            <a href="#About">About</a> 
             <a href="#contact">Contact</a>
         </div>
     </div>
@@ -43,8 +46,23 @@
             <span>Portfolio</span>
         </div>    
     </section>
-    <section class="content-bio" id="portfolio">
-        <div class="photo1"><span>My Profile</span></div>
+
+
+    <!-- Section Project -->
+    <section class="project-section" id="project">
+        <div class="header-project"><span>Project.</span></div>
+        <div class="gallery-project">
+            <div class="proj" onclick="location.href='bismit.html'" ><span>BISMIT</span></div>
+            <div class="proj" onclick="location.href='studioink.html'" ><span>STUDIOINK</span></div>
+        </div>
+    </section>
+    <!-- end Section Project -->
+
+
+
+    <!-- Section Bio -->
+    <section class="content-bio" id="About">
+        <div class="photo1"><span>About</span></div>
         <div class="biodata1">
             <div class="content">
                 <div class="tentangsaya">
@@ -104,15 +122,23 @@
             </div>
             <div class="tentang-ku">
                 <div class="photo2"><span>deskripsisingkat.</span></div>
-                <p class="deskrip">Muhammad Hafiz Maulana, Seorang mahasiswa. Berkuliah di Universitas Indonesia jurusan Ilmu Komputer angkatan 2019. Senang berhitung menjadi alasan masuk Ilmu Komputer. Di tahun 2020 ini ia ingin mencoba banyak hal baru lagi, ingin berteman dan bertemu dengan banyak orang, dan ingin mencari pengalaman yang baru. Cita-citanya lulus pada waktunya. Moto hidupnya adalah menjadi bermanfaat.</p>
+                <p class="deskrip">Saya adalah mahasiswa 19 tahun yang senang menelusuri dunia web front-end develop. Menyenangi dunia visual desain sejak SMA. Masuk ilmu komputer karena senang berhitung. Baik dalam menggunakan Premiere Pro, Photoshop, Ilustrator, dan sedikit After Effect. Saya mudah bergaul dengan banyak orang, pekerja keras, dan bisa bekerja dalam kelompok.</p>
             </div>
-        </div>
-        
+        </div>    
     </section>
+    <!-- end Bio Section -->
+
+
+
+    <!-- Section ThankYou -->
     <section class="thank-you">
         <h1>TerimaKasih.</h1>
         <span>sudah mampir...</span>
     </section>
+    <!-- end Section -->
+
+
+    <!-- Fitur Lainnya -->
     <div class="footer" id="contact">
         <div class="email"><span>Email -- <a href="https://mail.google.com/mail/?to=inbox@example.com&bcc=admin@example.com&subject=Hey#compose">m.hafizmaulana777@gmail.com</a></span></div>
         <div class="socmed">
@@ -130,6 +156,8 @@
             <span></span>
         </div>
     </div>
+    <!-- End Section -->
+
 
 </body>
 <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>

@@ -1,12 +1,10 @@
 // scroll-up animation in home
 const arrow = document.querySelector(".scroll-up");
 const client = document.querySelector(".navbar");
-
 const clientOptions = {
     rootMargin: ""
-};
-
-const clientObsever = new IntersectionObserver(function(
+}
+const pageObsever = new IntersectionObserver(function(
     entries, 
     clientObsever
     ) {
@@ -18,8 +16,9 @@ const clientObsever = new IntersectionObserver(function(
             }
         })
     }, clientOptions);
+pageObsever.observe(client);
 
-clientObsever.observe(client);
+
 
 // porto animation in home
 
