@@ -120,8 +120,7 @@
     }
 
     @include responsive(phone){
-      width: calc(100% - 12%);
-      padding: 6% 6% 6% 6%;
+      padding: 6%;
   }
 }
 

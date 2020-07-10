@@ -3,6 +3,7 @@ function tooglebtn1() {
     var btn = document.getElementById("mobile-menu-button");
     var nav = document.getElementById("navbar");
     var ops = document.getElementById("select");
+    document.querySelector("html").classList.toggle("noscroll");
     btn.classList.toggle("active");
     ops.classList.toggle("active");
     nav.classList.toggle("active");

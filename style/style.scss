@@ -2,6 +2,9 @@ html{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+.noscroll{
+    overflow: hidden;
+}
 body{
     display: flex;
     margin: 0;
@@ -34,82 +37,6 @@ body{
             font-size: 3em;
         }
     }
-}
-.project-section{
-    width: 100%;
-    margin-top: 3rem;
-    .header-project{
-        width: 100%;
-        padding-top: 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        span{
-            font-size: 5em;
-            font-weight: 900;
-            transition: all .5s ease-in;
-            @include responsive(phone){
-                font-size: 2.8em;
-            }
-        }
-    }
-    .gallery-project{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        .proj{
-            width: 80%;
-            height: 35vh;
-            margin: 1rem 0 1rem 0;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            cursor: pointer;
-            @include responsive(tabPort){
-                width: 100%;
-            }
-            span{
-                position: relative;
-                padding: 0 1rem 0 1rem;
-                color: black;
-                font-size: 6em;
-                font-weight: 800;
-                transform: translateX(45%);
-                @include responsive(tabPort){
-                    color: white;
-                    transform: translateX(0);
-                }
-                @include responsive(phone){
-                    font-size: 2.5em;
-                }
-            }
-            &:nth-child(even){
-                align-self: flex-end;
-                justify-content: flex-start;
-                span{
-                    transform: translateX(-45%);
-                    @include responsive(tabPort){
-                        color: white;
-                        transform: translateX(0);
-                    }
-                }
-            }
-            &:nth-child(1){
-                background: linear-gradient(0deg, rgba(72, 79, 90, 0.555),  rgba(132, 147, 175, 0.555)), url(../img/Bismit1.png);
-                background-position: 50% 45%;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            &:nth-child(2){
-                background: linear-gradient(0deg,  rgba(72, 79, 90, 0.555), rgba(132, 147, 175, 0.555)), url(../img/StudioDesktop1.png);
-                background-position: 50% 45%;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-        }
-    }
-    
 }
 
 .content-bio{
@@ -174,8 +101,8 @@ body{
                 align-items: flex-end;
                 span{
                     position: relative;
-                    bottom: -25px;
-                    left: -30px;
+                    bottom: -30px;
+                    left: 4px;
                     font-size: 4em;
                     font-weight: 700;
                     color: rgb(0, 0, 0);
@@ -186,6 +113,7 @@ body{
                     }
                     @include responsive(phone){
                         font-size: 2.5em;
+                        left: -10px;
                     }
 
                 }
@@ -223,45 +151,76 @@ body{
                 flex-direction: column;
                 justify-content: center;
             }
-            .tittle1{
-                margin: 0 0 1rem 0;
-                font-size: 4em;
-                font-weight: 700;
-                color: rgba(160, 128, 128, 0.445);
+            .title1{
+                margin: 0;
+                font-size: 3.5em;
+                font-weight: 900;
+                color: black;
                 display: flex;
                 flex-direction: column;
                 @include responsive(tabLan){
-                    font-size: 3em;
+                    font-size: 2.2em;
                 }
                 @include responsive(tabPort){
                     font-size: 2em;
                 }
+                @include responsive(phone){
+                    font-size: 1.3em;
+                }
                 
             }
-            .tittle2{
-                @extend .tittle1;
+            .subtitle1{
+                margin: 0;
+                font-size: 1.5em;
+                font-weight: 500;
+                color: rgba(77, 74, 74, 0.445);
+                @include responsive(phone){
+                    font-size: 1em;
+                }
+            }
+            .pendidikan{
+                margin-top: -1em;
+                .project{
+                    width: 97%;
+                }
+            }
+            .title2{
+                margin: 0;
+                font-size: 4em;
+                font-weight: 700;
+                z-index: 1;
+                position: relative;
+                top: 25px;
+                left: 10px;
+                color: black;
                 @include responsive(tabPort){
                     text-align: right;
                 }
-            }
-            .table1{
-                margin: 0 0 1rem 0;
-                display: block;
-                font-size: 1.5em;
                 @include responsive(tabLan){
-                    font-size: 1.3em;
-                }
-                @include responsive(tabPort){
-                    font-size: 1em;
+                    font-size: 3em;
                 }
                 @include responsive(phone){
-                    font-size: .8em;
+                    font-size: 2.5em;
+                    left: -10px;
                 }
             }
-            .table2{
-                @extend .table1;
-                @include responsive(tabPort){
-                    float: right;
+            .overlay{
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.411);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: all .2s ease-in-out;
+                &:hover{
+                    opacity: 1;
+                }
+                span{
+                    color: white;
+                    font-size: 1.5em;
+                    font-weight: 400;
                 }
             }
         }

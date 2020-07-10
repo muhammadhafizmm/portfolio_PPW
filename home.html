@@ -7,13 +7,15 @@
     <link rel="icon" href="img/logo.png">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- navbar section -->
     <div class="navbar" id="navbar">
-        <div class="logo"><a href="">Hello.</a></div>
+        <div class="logo"><a href="">Halo.</a></div>
         <div class="mobile-menu-button" id="mobile-menu-button" onclick="tooglebtn1()">
             <span></span>
             <span></span>
@@ -39,11 +41,11 @@
     <!-- end of navbar section -->
     <section class="home-greeting">
         <div class="background1">
-            <span>Portfolio</span>
+            <span>Portofolio</span>
         </div>
         <h1>MUHAMMAD HAFIZ MAULANA.</h1>
         <div class="background2">
-            <span>Portfolio</span>
+            <span>Portofolio</span>
         </div>    
     </section>
 
@@ -53,63 +55,42 @@
         <div class="biodata1">
             <div class="content">
                 <div class="tentangsaya">
-                    <span class="tittle1">tentangsaya.</span>
-                    <div class="table1">
-                    <table>
-                        <tr>
-                            <td>Nama</td>
-                            <td>: Muhammad Hafiz Maulana</td>
-                        </tr>
-                        <tr>
-                            <td>NPM</td>
-                            <td>: 1906350742</td>
-                        </tr>
-                        <tr>
-                            <td>Angkatan</td>
-                            <td>: 2019</td>
-                        </tr>
-                        <tr>
-                            <td>Jurusan</td>
-                            <td>: Ilmu Komputer</td>
-                        </tr>
-                        <tr>
-                            <td>Universitas &nbsp;</td>
-                            <td>: Universitas Indonesia</td>
-                        </tr>
-                        <tr>
-                            <td>Hobi</td>
-                            <td>: Berhitung, Visual Desain, Game</td>
-                        </tr>
-                    </table>
-                    </div>
+                    <span class="title1">Muhammad Hafiz Maulana</span>
+                    <span class="subtitle1">Web Developer</span>
                 </div>
-                <div class="pendidikan">
-                    <span class="tittle2">pendidikanformal.</span>
-                    <div class="table2">
-                        <table>
-                            <tr>
-                                <td>Universitas Indonesia</td>
-                                <td>2019 - Sekarang</td>
-                            </tr>
-                            <tr>
-                                <td>SMAN Modal Bangsa Aceh Besar</td>
-                                <td>2016 - 2019</td>
-                            </tr>
-                            <tr>
-                                <td>SMPN 19 Percontohan Banda Aceh &nbsp;</td>
-                                <td>2013 - 2016</td>
-                            </tr>
-                            <tr>
-                                <td>MIN 1 Banda Aceh</td>
-                                <td>2007 - 2013</td>
-                            </tr>
-                        </table>
+                <div class="pendidikan" id="project">
+                    <span class="title2">galeryprojek.</span>
+                    <div class="project">
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="overlay" onclick="location.href='https://www.asji.com'">
+                                    <span>view</span>
+                                </div>
+                                <img class="d-block w-100" src="img/Asji2.png" alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <div class="overlay" onclick="location.href='https://www.studioinkproduction.com'">
+                                    <span>view</span>
+                                </div>
+                                <img class="d-block w-100" src="img/studioinkproduction.png" alt="Second slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
                     </div>
                 </div>
             </div>
             <div class="tentang-ku">
                 <div class="photo2"><span>deskripsisingkat.</span></div>
-                <p class="deskrip">Saya adalah mahasiswa 19 tahun yang senang menelusuri dunia web front-end develop. Menyenangi dunia visual desain sejak SMA. Masuk ilmu komputer karena senang berhitung. Baik dalam menggunakan Premiere Pro, Photoshop, Ilustrator, dan sedikit After Effect. Saya mudah bergaul dengan banyak orang, pekerja keras, dan bisa bekerja dalam kelompok.</p>
+                <p class="deskrip">Halo, Apis disini. Saya adalah seorang <b>web developer</b> yang bekerja di sekitaran Depok. Umur saya 18 tahun dan saya berkuliah di Fakultas Ilmu Komputer. Saya memiliki kesenangan di dunia seni dan komputer. Senang mengulik dan menyelsaikan masalah. Saya memilih jalan awal sebagai web developer untuk memulai karir saya di dunia kerja nantinya. Saya sendiri sangat senang untuk belajar dan bertemu orang baru. Menurut saya, saya baik dalam menyampaikan sesuatu kepada orang lain. Salam kenal!</p>
             </div>
         </div>    
     </section>
@@ -120,7 +101,6 @@
     <!-- Section ThankYou -->
     <section class="thank-you">
         <h1>TerimaKasih.</h1>
-        <span>sudah mampir...</span>
     </section>
     <!-- end Section -->
 
@@ -147,6 +127,11 @@
 
 
 </body>
+<!-- bootstrap -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- scroll -->
 <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 <script>
     ScrollOut();
